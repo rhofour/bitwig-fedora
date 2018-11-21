@@ -6,24 +6,24 @@
 # USAGE: bitwig-fedora.sh [-i|-u] [-h]
 #
 # DESCRIPTION: This script automates the Bitwig Studio installation process on
-# Fedora 28.
+# Fedora 29.
 # The default starting directory is the current directory.
 # Do not descend directories on other filesystems.
 #
 # OPTIONS: See function - usage - below.
-# REQUIREMENTS: Fedora 28 Workstation, Bitwig Studio 2.4
+# REQUIREMENTS: Fedora 29 Workstation, Bitwig Studio 2.4
 # NOTES: ---
 #=============================================================================
 
 ROOT_UID=0
 E_NOTROOT=87
-VERSION=2.4
+VERSION=2.4.2
 DEFAULT_FILENAME="bitwig-studio-$VERSION.deb"
 DEFAULT_URL="https://downloads.bitwig.com/stable/$VERSION/$DEFAULT_FILENAME"
 INSTALL_LOG="/opt/bitwig-studio/.$DEFAULT_FILENAME.log"
 SAFE_FILE_REMOVE="^/\./usr/share/*|^/\./opt/bitwig-studio/*"
-SHA256="849c5c74902421f1c901be1d0216be8909d488bbdaeec2f5c56cc8c5b94048d9"
-OS_VERSION="Fedora release 28 (Twenty Eight)"
+SHA256="489d3e70446f8947af3f2cef16c55d29450f4d3ded60832df3d22e4da398b245"
+OS_VERSION="Fedora release 29 (Twenty Nine)"
 
 
 #=== FUNCTION ================================================================
