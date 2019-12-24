@@ -17,12 +17,12 @@
 
 ROOT_UID=0
 E_NOTROOT=87
-VERSION=3.0.2
+VERSION=3.1.1
 DEFAULT_FILENAME="bitwig-studio-$VERSION.deb"
 DEFAULT_URL="https://downloads.bitwig.com/stable/$VERSION/$DEFAULT_FILENAME"
 INSTALL_LOG="/opt/bitwig-studio/.$DEFAULT_FILENAME.log"
 SAFE_FILE_REMOVE="^/\./usr/share/*|^/\./opt/bitwig-studio/*"
-SHA256="dae03f075fc198aa9a0304a3eda2a2cbbd78c02bfd17ec9d50259a090b42857e"
+SHA256="f31221a1b94801a8a74c19eb079a87a84c6dea3ce7d58687fd15a25c03f5fed5"
 OS_VERSION="Fedora release 30 (Thirty)"
 
 
@@ -75,6 +75,8 @@ function unpack_bitwig()
   dpkg-deb -xv $DEFAULT_FILENAME / | grep -v '[/]$' >> $tmpfile
   mv $tmpfile $INSTALL_LOG
   rm -rf tmpfile
+  # TODO: Remove this once it's not longer necessary.
+  echo "If you have problems running bitwig try: rm /opt/bitwig-studio/lib/jre/lib/ext/"
   chown 400 $INSTALL_LOG
 }
 
