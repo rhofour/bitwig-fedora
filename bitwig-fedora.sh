@@ -17,13 +17,13 @@
 
 ROOT_UID=0
 E_NOTROOT=87
-VERSION=3.1.3
+VERSION=3.2.1
 DEFAULT_FILENAME="bitwig-studio-$VERSION.deb"
 DEFAULT_URL="https://downloads.bitwig.com/stable/$VERSION/$DEFAULT_FILENAME"
 INSTALL_LOG="/opt/bitwig-studio/.$DEFAULT_FILENAME.log"
 SAFE_FILE_REMOVE="^/\./usr/share/*|^/\./opt/bitwig-studio/*"
-SHA256="749f622303f2b289d0636a5f110589ef292823fc7748c67c7fdc97722b75e587"
-OS_VERSION="Fedora release 31 (Thirty One)"
+SHA256="82259db2679794d78c3b79d446a5c5175f9632e85152026b034dfcb920a99851"
+OS_VERSION="Fedora release 32 (Thirty Two)"
 
 
 #=== FUNCTION ================================================================
